@@ -1,0 +1,171 @@
+@font-face{
+    src: url(../fonts/Hoftype\ -\ Cardillac\ Medium.otf);
+    font-family: "cardillac_medium";
+}
+
+@font-face {
+    font-family: "cardillac_bold";
+    src: url(../fonts/Hoftype\ -\ Cardillac\ Bold.otf);
+}
+
+@font-face {
+    font-family: "cardillac-light";
+    src: url(../fonts/Hoftype\ -\ Cardillac\ Light.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    /* font-family: sans-serif; */
+    line-height: 1.6;
+}
+
+/* wrapper content */
+
+#wrapper{
+    width: 100%;
+    border: 20px solid #ffffff;
+}
+
+.error{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 79%);
+    width: 100%;
+    padding: 200px 0px;
+    background: #232323;
+}
+
+.row {
+    height: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+    /* background: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-4 {
+    position: relative;
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+    height: 290px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* background: green; */
+    height: 100%;
+}
+
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 260px;
+    line-height: 200px;
+    font-family: "cardillac-light";
+    text-align: center;
+    color: #1e1e1e;
+    font-weight: normal;
+}
+
+h4{
+    font-size: 34px;
+    font-family: "cardillac_medium";
+    text-align: center;
+    margin-top: -40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    font-weight: normal;
+}
+
+p{
+    font-family: "sarabun_light";
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 22px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+p a{
+    text-decoration: none;
+    color: #CD931F;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+
+
+.btn-gold {
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "cardillac_bold";
+    background: #CD931F;
+    display: inline-block;
+}
+
+.btn-gold::after {
+    content: "";
+    position: absolute;
+    transform: rotate(-65deg);
+    opacity: 0.15;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    transition: linear 0.4s;
+}
+
+.btn-gold:hover::after {
+    left: 100%;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+@media (max-width:575px){
+    .error{
+        padding: 90px 55px;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
+    }
+
+    .col-4{
+        max-width: 100%;
+        flex: none;
+    }
+
+    h1{
+        font-size: 90px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+    p{
+        font-size: 8px;
+        line-height: 12px;
+    }
+}
