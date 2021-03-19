@@ -53,7 +53,7 @@ body {
 }
 
 .heading-container {
-    background: url(https://dashlibulag.az/storage/s74CK21eqf8PwtENpCzVvmicCYFCXnvLwVVNuV2N.png) center no-repeat;
+    background: url(../img/home-header-background.png) center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -654,15 +654,15 @@ button.vjs-mute-control.vjs-control.vjs-button.vjs-vol-3, button.vjs-mute-contro
 }
 
 .number-content-3 {
-    background: url(https://dashlibulag.az/storage/148/oJK53DaqDH-location.svg);
+    background: url(../img/location-picture.svg);
 }
 
 .number-content-2 {
-    background: url(https://dashlibulag.az/storage/147/6g8JsdC13U-K.svg);
+    background: url(../img/k-picture.svg);
 }
 
 .number-content-1 {
-    background: url(https://dashlibulag.az/storage/146/ZJsXqzrJp1-language.svg);
+    background: url(../img/language-picture.svg);
 }
 
 

@@ -1,7 +1,7 @@
 var btn = document.querySelector('btn');
 
 btn.addEventListener('click', function () {
-    var hint = document.getElementById('myModal');
+    var myModal = document.getElementById('myModal');
     if (myModal.style.visibility == 'hidden') {
         myModal.style.visibility = 'visible';
         myModal.style.opacity = '1';

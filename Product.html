@@ -58,7 +58,7 @@
 
             <div class="burger">
 
-                <a href="#" class="responsive-navbar-brand"><img src="https://dashlibulag.az/dashli_bulag/img/logo.svg"
+                <a href="home.html" class="responsive-navbar-brand"><img src="https://dashlibulag.az/dashli_bulag/img/logo.svg"
                         alt="" srcset=""></a>
 
                 <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">
@@ -72,9 +72,9 @@
 
                 <ul>
 
-                    <li><a href="#">Haqqımızda</a></li>
-                    <li><a href="#">Məhsullar</a></li>
-                    <li><a href="#">Bizimlə əlaqə</a></li>
+                    <li><a href="about.html">Haqqımızda</a></li>
+                    <li><a href="product.html">Məhsullar</a></li>
+                    <li><a href="contact.html">Bizimlə əlaqə</a></li>
                     <li><button onclick="modalopen()">Sifariş et</button></li>
 
                 </ul>
@@ -332,45 +332,51 @@
             <article id="white-carousel">
 
                 <div class="owl-carousel owl-theme white-carousel">
+                  
                     <div class="item">
-                        <a href="#">
 
-                            <img src="https://dashlibulag.az/storage/208/V0HcQFNdVr-70164569_110608213709170_8874590816627064832_o.jpg"
-                                alt="">
-
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-
-                            <img src="https://dashlibulag.az/storage/220/nWH8jlkCLy-91530202_121230799520400_4179775239336703541_n.jpg"
-                                alt="">
-
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-
-                            <img src="https://dashlibulag.az/storage/209/4M3ps9XH0l-74188739_110611283708863_4393511545330466816_o.jpg"
-                                alt="">
-
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-
+                        <a href="https://dashlibulag.az/storage/210/VnFdxkIw0I-86971313_178629113573746_2371968338587811840_o.jpg"
+                            data-fancybox="gallery">
                             <img src="https://dashlibulag.az/storage/210/VnFdxkIw0I-86971313_178629113573746_2371968338587811840_o.jpg"
                                 alt="">
-
                         </a>
+
                     </div>
                     <div class="item">
-                        <a href="#">
 
+                        <a href="https://dashlibulag.az/storage/205/ftVOBsComn-80416107_214731272873677_6483182436738235337_n.jpg"
+                            data-fancybox="gallery">
                             <img src="https://dashlibulag.az/storage/205/ftVOBsComn-80416107_214731272873677_6483182436738235337_n.jpg"
                                 alt="">
-
                         </a>
+
+                    </div>
+                    <div class="item">
+
+                        <a href="https://dashlibulag.az/storage/208/V0HcQFNdVr-70164569_110608213709170_8874590816627064832_o.jpg"
+                            data-fancybox="gallery">
+                            <img src="https://dashlibulag.az/storage/208/V0HcQFNdVr-70164569_110608213709170_8874590816627064832_o.jpg"
+                                alt="">
+                        </a>
+
+                    </div>
+                    <div class="item">
+
+                        <a href="https://dashlibulag.az/storage/220/nWH8jlkCLy-91530202_121230799520400_4179775239336703541_n.jpg"
+                            data-fancybox="gallery">
+                            <img src="https://dashlibulag.az/storage/220/nWH8jlkCLy-91530202_121230799520400_4179775239336703541_n.jpg"
+                                alt="">
+                        </a>
+
+                    </div>
+                    <div class="item">
+
+                        <a href="https://dashlibulag.az/storage/209/4M3ps9XH0l-74188739_110611283708863_4393511545330466816_o.jpg"
+                            data-fancybox="gallery">
+                            <img src="https://dashlibulag.az/storage/209/4M3ps9XH0l-74188739_110611283708863_4393511545330466816_o.jpg"
+                                alt="">
+                        </a>
+
                     </div>
 
                 </div>
@@ -444,12 +450,64 @@
     </footer>
 
 
+    <!-- Modal content -->
+    <div id="myModal">
+
+        <div class="modal-content">
+            <span class="close">
+                <img src="https://dashlibulag.az/dashli_bulag/img/close.svg" alt="" srcset="">
+            </span>
+
+
+            <div class="page-title">
+
+                <div>Sifariş et</div>
+
+                <div class="gold-color"></div>
+
+            </div>
+
+
+            <form id="modal-form">
+
+                <div class="modal-form-input">
+
+                    <div>
+
+                        <input type="text" id="username" name="name" required>
+                        <label for="username">Sifarişçi</label>
+                    </div>
+
+                    <div>
+                        <input type="tel" name="num" id="number" required>
+                        <label for="number">Mobil Nömrə</label>
+
+                    </div>
+
+                </div>
+
+                <button class="btn-modal">Təsdiq edin</button>
+
+            </form>
+
+            <a href="#" class="modal-parag">
+                <p>Alqı-satqı siyasəti</p>
+            </a>
+
+        </div>
+
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/carousel-product.js"></script>
     <script src="js/mobil-carouse.js"></script>
     <script src="js/carousel-mobil.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/modal.js"></script>
+    
+    
+    
 
 </body>
 
